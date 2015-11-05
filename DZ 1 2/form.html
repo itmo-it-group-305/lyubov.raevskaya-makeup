@@ -28,7 +28,7 @@
 <form method="post">
     <div align="center">
         <p>Ваше имя:<br>
-            <input type="text" placeholder="Аркадий" size="50"> </p>
+            <input type="text" placeholder="Аркадий" size="50" autofocus> </p>
 
         <p>Наименование организации:<br>
             <input type="text" placeholder="Газпром" size="50"> </p>
@@ -37,9 +37,10 @@
             <input type="text" placeholder="+7(000)000 00 00" size="50"> </p>
 
         <p>Адрес электронной почты:<br>
-            <input type="text" placeholder="example@company.ru" size="50"> </p>
+            <input type="email" placeholder="example@company.ru" size="50"> </p>
     </div>
     <div align="center">
+        <h2>Параметры помещения</h2>
         <label for="box">Выберите тип помещения</label>
         <select name="box" id="box">
             <option value="1" selected>Офисное</option>
@@ -51,19 +52,25 @@
         </select>
     </div>
     <div align="center">
-        <p>Размеры помещения (длина х ширина х высота)<br>
+        <p>Размеры помещения (длина х ширина х высота), м<br>
             <input type="text" placeholder="100х75х8" size="50"> </p>
+        <p>Цвет стен:
+        <input type="color"></p>
+        <p>Цвет пола:
+        <input type="color"></p>
         <p>Высота рабочей поверхности<br>
             <input type="text" placeholder="0,8 м" size="50"> </p>
         <p>Дополнительные параметры помещения<br>
-            <input type="text" size="50"> </p>
+            <textarea name="comment" cols="60" rows="4"></textarea><br>
+        <h2>Параметры системы освещения</h2>
         <p>Необходимый уровень освещенности<br>
             <input type="text" size="50"> </p>
-        <p>Высота подвеса светильников (м.)<br>
-            <input type="text" size="50"> </p>
+        <p>Высота подвеса светильников, м.
+            <input type="number"> </p>
         <label for="kak">Способ крепления светильников</label>
         <select name="kak" id="kak">
-            <option value="1" selected>Встраиваемый</option>
+            <option value="0" disabled selected>Не выбрано</option>
+            <option value="1" >Встраиваемый</option>
             <option value="2">Накладной</option>
             <option value="3">Подвесной</option>
             <option value="4">Консольный</option>
@@ -74,7 +81,7 @@
     </div><br>
     <div align="center">
 
-        <legend>Цель проекта:</legend>
+       <fieldset> <legend><b>Цель проекта:</b></legend>
         <label>
             <input type="checkbox" name="sections[]"> Замена существующих светильников на другие
         </label><br>
@@ -86,11 +93,19 @@
         </label><br>
         <label>
             <input type="checkbox" name="sections[]">Установка светильников на проектируемых или строящихся объектах
-        </label><br>
+        </label><br></fieldset>
+    </div>
+    <div align="center">
+        <p>Загрузите план помещения, фотографии объекта (.dwg, .pdf, .jpeg и др.)<br>
+            <input type="file" multiple>
+        </p>
+
     </div>
     <div align="center">
         <p>Дополнительные комментарии<br>
-            <textarea name="comment" cols="40" rows="3"></textarea></p>
+            <textarea name="comment" cols="70" rows="5"></textarea></p>
+        <p>Дата заполнения заявки:
+        <input type="date"></p><br>
         <input type="submit" value="Отправить">
 
 </form>
