@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style>
+        p {text-indent: 30px;}
+    </style>
+    <meta charset="UTF-8">
+    <title>Заказать расчет</title>
+
+</head>
+<body>
+<header>
+    <div class="header-bg">
+        <img src="Images/Шапка.jpg" alt="Шапка сайта" width="1350">
+    </div>
+</header>
+<table width="100%">
+    <tr>
+        <th><a href="index.html">Главная</a></th>
+        <th><a href="uslugi.html">Услуги</a></th>
+        <th><a href="form.html">Заказать расчет</a></th>
+        <th><a href="contacts.html">Контакты</a></th>
+    </tr>
+</table>
+<h2 align="center">Заказать расчет освещенности</h2><br>
+<p>Для выполнения расчета освещенности нам необходимо получить информацию об освещаемом объекте. Для этого просим Вас
+    заполнить опросную форму.</p>
+<form method="post">
+    <div align="center">
+        <p>Ваше имя:<br>
+            <input type="text" placeholder="Аркадий" size="50"> </p>
+
+        <p>Наименование организации:<br>
+            <input type="text" placeholder="Газпром" size="50"> </p>
+
+        <p>Контактный телефон:<br>
+            <input type="text" placeholder="+7(000)000 00 00" size="50"> </p>
+
+        <p>Адрес электронной почты:<br>
+            <input type="text" placeholder="example@company.ru" size="50"> </p>
+    </div>
+    <div align="center">
+        <label for="box">Выберите тип помещения</label>
+        <select name="box" id="box">
+            <option value="1" selected>Офисное</option>
+            <option value="2">Торговое</option>
+            <option value="3">Производственное</option>
+            <option value="4">Жилое</option>
+            <option value="5">Спортивное</option>
+            <option value="6">Складское</option>
+        </select>
+    </div>
+    <div align="center">
+        <p>Размеры помещения (длина х ширина х высота)<br>
+            <input type="text" placeholder="100х75х8" size="50"> </p>
+        <p>Высота рабочей поверхности<br>
+            <input type="text" placeholder="0,8 м" size="50"> </p>
+        <p>Дополнительные параметры помещения<br>
+            <input type="text" size="50"> </p>
+        <p>Необходимый уровень освещенности<br>
+            <input type="text" size="50"> </p>
+        <p>Высота подвеса светильников (м.)<br>
+            <input type="text" size="50"> </p>
+        <label for="kak">Способ крепления светильников</label>
+        <select name="kak" id="kak">
+            <option value="1" selected>Встраиваемый</option>
+            <option value="2">Накладной</option>
+            <option value="3">Подвесной</option>
+            <option value="4">Консольный</option>
+            <option value="5">Настенный</option>
+            <option value="6">Трековый</option>
+            <option value="6">Напольный</option>
+        </select>
+    </div><br>
+    <div align="center">
+
+        <legend>Цель проекта:</legend>
+        <label>
+            <input type="checkbox" name="sections[]"> Замена существующих светильников на другие
+        </label><br>
+        <label>
+            <input type="checkbox" name="sections[]"> Сокращение энергопотребления осветительной установки
+        </label><br>
+        <label>
+            <input type="checkbox" name="sections[]">Увеличение освещенности
+        </label><br>
+        <label>
+            <input type="checkbox" name="sections[]">Установка светильников на проектируемых или строящихся объектах
+        </label><br>
+    </div>
+    <div align="center">
+        <p>Дополнительные комментарии<br>
+            <textarea name="comment" cols="40" rows="3"></textarea></p>
+        <input type="submit" value="Отправить">
+
+</form>
+</body>
+</html>
