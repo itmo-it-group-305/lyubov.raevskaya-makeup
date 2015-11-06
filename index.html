@@ -2,24 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML-формы</title>
 </head>
 
 <body>
-    <form action="index.html" method="post">
-        <input type="text" placeholder="Введите текст"> <br>
+    <h1>Стилизуем html формы с помощью css</h1>
+    <h2>jfjfjfjfj</h2>
+    <form method="post">
+        <div class="form-row">
+            <label for="fio">ФИО</label>
+            <input id="fio" type="text" placeholder="Зелепупки Пётр Аркадьевич" name="fio">
+        </div>
+        <div class="form-row">
+            <label>
+                Мужской
+                <input type="radio" name="sex" value="0">
+            </label>
 
-        <input type="radio"><br>
-        <input type="checkbox"><br>
-        <input type="radio" name="sex" value="0">
-        <input type="radio" name="sex" value="1" checked>
-        <input type="radio" name="sex" value="2"><br>
+            <label>
+                Женский <input type="radio" name="sex" value="1" checked>
+            </label>
+                    <label>
+                ОНО<input type="radio" name="sex" value="2">
+            </label>
 
-        <input type="checkbox" name="sections[]">
-        <input type="checkbox" name="sections[]">
-        <input type="checkbox" name="sections[]">
+        </div>
+        <div class="form-row">
+            <label for="city">Выберите город</label>
+            <select name="city" id="city">
+                <option value="1">Санкт-Петербург</option>
+                <option value="1">Москва</option>
+                <option value="1" selected>Екатеринбург</option>
 
-        <input type="submit" value="Send"> <br>
+            </select>
+        </div>
+        <div class="form-row">
+            <fieldset>
+                <legend>Выберите категории рассылок</legend>
+                <ul>
+                    <li>
+                        <label>
+                                    <input type="checkbox" name="sections[]"> Новости
+                                </label>
+                </div>
+                <div class="form-row">
+                                               <label>
+                                <input type="checkbox" name="sections[]"> Балалайка
+                            </label>
+
+                </div>
+                <div class="form-row">
+                    <label>
+                        <input type="checkbox" name="sections[]">Девочки</label> </div>
+        </form>
+    </ul>
+
+
+            </fieldset>
+
+
+             </label> Новости <input type="checkbox" name="sections[]"> Новости </label>
+
+             <input type="checkbox" name="sections[]">
+         </div>
+
+        <input type="radio">
+            <input type="checkbox">
+
+        <label for="comment">Особые пожелания</label>
+        <textarea name="comment" id="comment"></textarea>
+
+        <input type="submit" value="Send">
     </form>
 </body>
 </html>
