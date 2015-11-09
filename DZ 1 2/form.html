@@ -2,26 +2,30 @@
 <html lang="ru">
 <head>
     <style>
-        p {text-indent: 30px;}
+        body {
+            background: url("Images/background.jpg");
+        }
     </style>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles1.css">
     <title>Заказать расчет</title>
-
+    <header>
+        <div class="header-bg">
+            <img src="Images/Шапка.jpg" alt="Шапка сайта" width="100%">
+        </div>
+    </header>
 </head>
-<body leftmargin="150">
-<header>
-    <div class="header-bg">
-        <img src="Images/Шапка.jpg" alt="Шапка сайта" width="100%">
-    </div>
-</header>
+<body>
+
 <table width="100%">
     <tr>
-        <th><a href="index.html">Главная</a></th>
-        <th><a href="uslugi.html">Услуги</a></th>
-        <th><a href="form.html">Заказать расчет</a></th>
-        <th><a href="contacts.html">Контакты</a></th>
+        <th class="menu"><a href="index.html">Главная</a></th>
+        <th class="menu"><a href="uslugi.html">Услуги</a></th>
+        <th class="menu"><a href="form.html">Заказать расчет</a></th>
+        <th class="menu"><a href="contacts.html">Контакты</a></th>
     </tr>
 </table>
+<div class="text">
 <h2 align="center">Заказать расчет освещенности</h2><br>
 <p>Для выполнения расчета освещенности нам необходимо получить информацию об освещаемом объекте. Для этого просим Вас
     заполнить опросную форму.</p>
@@ -107,7 +111,8 @@
         <p>Дата заполнения заявки:
         <input type="date"></p><br>
         <input type="submit" value="Отправить">
-
+    </div>
+</div>
 </form>
 </body>
 </html>

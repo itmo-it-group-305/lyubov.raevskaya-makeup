@@ -1,0 +1,18 @@
+
+div.header-bg {
+    width: auto;
+}
+div.text {
+    background-color: rgba(180, 170, 150, 0.8);
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+}
+table.menu {
+    width: 100%;
+}
+th.menu {
+    width: 200px;
+    background-color: lemonchiffon;
+    text-align: center;
+}
