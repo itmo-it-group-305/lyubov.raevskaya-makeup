@@ -1,18 +1,73 @@
+@import "Grid.css";
+@import "normalize.css";
 
-div.header-bg {
-    width: auto;
+body{
+    background: url(../Images/background.jpg);
+    color: black;
+    font-family: "Calibri Light", Arial, sans-serif;
+   }
+header {
+    margin: 0;
 }
-div.text {
-    background-color: rgba(180, 170, 150, 0.8);
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 10px;
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-table.menu {
-    width: 100%;
-}
-th.menu {
-    width: 200px;
-    background-color: lemonchiffon;
+
+.sidebar ul li {
+    text-decoration: none;
+    display: block;
+    color: #eee;
+    background: #bbb;
+    width: 220px;
+    height: 40px;
     text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #000;
 }
+
+.sidebar ul li a{
+    text-decoration: none;
+    margin-bottom: 2px;
+    line-height: 40px;
+}
+
+.sidebar ul li:hover {
+    background: #aaa;
+}
+
+.menu tr th a {
+    text-decoration: none;
+}
+
+.menu tr th {
+    color: #eee;
+    background: #bbb;
+    height: 40px;
+    width: 235px;
+    text-align: center;
+    margin: auto 1px;
+    border-left: 2px solid #000000;
+}
+.menu tr th:hover {
+    background: #aaa;
+}
+
+.text {
+    background-color: rgba(180, 170, 150, 0.8);
+    padding: 20px;
+}
+
+.text table tr th img{
+    width: 210px;
+    height: 150px;
+}
+.text table tr th {
+    width: 140px;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+}
+

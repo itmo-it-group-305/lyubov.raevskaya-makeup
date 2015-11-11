@@ -1,118 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <style>
-        body {
-            background: url("Images/background.jpg");
-        }
-    </style>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/styles1.css">
     <title>Заказать расчет</title>
-    <header>
-        <div class="header-bg">
-            <img src="Images/Шапка.jpg" alt="Шапка сайта" width="100%">
-        </div>
-    </header>
+
 </head>
 <body>
+    <header>
+        <div>
+            <a href="index.html"><img src="Images/Шапка.jpg" alt="Шапка сайта" width="100%"></a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <table class="menu col-12">
+                <tr>
+                    <th><a href="index.html">Главная</a></th>
+                    <th><a href="uslugi.html">Услуги</a></th>
+                    <th><a href="form.html">Заказать расчет</a></th>
+                    <th><a href="contacts.html">Контакты</a></th>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <div class="sidebar col-3">
+                <ul>
+                    <li><a href="">О НАС</a></li>
+                    <li><a href="">Наши работы</a></li>
+                    <li><a href="">Производители</a></li>
+                    <li><a href="">Оплата и доставка</a></li>
+                    <li><a href="">Полезная информация</a></li>
+                    <li><a href="">Обратная связь</a></li>
+                </ul>
+            </div>
+            <div class="text col-9">
+                <h2 align="center">Заказать расчет освещенности</h2>
+                <p>Для выполнения расчета освещенности нам необходимо получить информацию об освещаемом объекте. Для этого просим Вас
+                    заполнить опросную форму.</p>
+                <form method="post">
+                    <div align="center">
+                        <p>Ваше имя:<br>
+                            <input type="text" placeholder="Аркадий" size="50" autofocus> </p>
 
-<table width="100%">
-    <tr>
-        <th class="menu"><a href="index.html">Главная</a></th>
-        <th class="menu"><a href="uslugi.html">Услуги</a></th>
-        <th class="menu"><a href="form.html">Заказать расчет</a></th>
-        <th class="menu"><a href="contacts.html">Контакты</a></th>
-    </tr>
-</table>
-<div class="text">
-<h2 align="center">Заказать расчет освещенности</h2><br>
-<p>Для выполнения расчета освещенности нам необходимо получить информацию об освещаемом объекте. Для этого просим Вас
-    заполнить опросную форму.</p>
-<form method="post">
-    <div align="center">
-        <p>Ваше имя:<br>
-            <input type="text" placeholder="Аркадий" size="50" autofocus> </p>
+                        <p>Наименование организации:<br>
+                            <input type="text" placeholder="Газпром" size="50"> </p>
 
-        <p>Наименование организации:<br>
-            <input type="text" placeholder="Газпром" size="50"> </p>
+                        <p>Контактный телефон:<br>
+                            <input type="text" placeholder="+7(000)000 00 00" size="50"> </p>
 
-        <p>Контактный телефон:<br>
-            <input type="text" placeholder="+7(000)000 00 00" size="50"> </p>
+                        <p>Адрес электронной почты:<br>
+                            <input type="email" placeholder="example@company.ru" size="50"> </p>
+                    </div>
+                    <div align="center">
+                        <h2>Параметры помещения</h2>
+                        <label for="box">Выберите тип помещения</label>
+                        <select name="box" id="box">
+                            <option value="1" selected>Офисное</option>
+                            <option value="2">Торговое</option>
+                            <option value="3">Производственное</option>
+                            <option value="4">Жилое</option>
+                            <option value="5">Спортивное</option>
+                            <option value="6">Складское</option>
+                        </select>
+                    </div>
+                    <div align="center">
+                        <p>Размеры помещения (длина х ширина х высота), м<br>
+                            <input type="text" placeholder="100х75х8" size="50"> </p>
+                        <p>Цвет стен:
+                        <input type="color"></p>
+                        <p>Цвет пола:
+                        <input type="color"></p>
+                        <p>Высота рабочей поверхности<br>
+                            <input type="text" placeholder="0,8 м" size="50"> </p>
+                        <p>Дополнительные параметры помещения<br>
+                            <textarea name="comment" cols="60" rows="4"></textarea><br>
+                        <h2>Параметры системы освещения</h2>
+                        <p>Необходимый уровень освещенности<br>
+                            <input type="text" size="50"> </p>
+                        <p>Высота подвеса светильников, м.
+                            <input type="number"> </p>
+                        <label for="kak">Способ крепления светильников</label>
+                        <select name="kak" id="kak">
+                            <option value="0" disabled selected>Не выбрано</option>
+                            <option value="1" >Встраиваемый</option>
+                            <option value="2">Накладной</option>
+                            <option value="3">Подвесной</option>
+                            <option value="4">Консольный</option>
+                            <option value="5">Настенный</option>
+                            <option value="6">Трековый</option>
+                            <option value="6">Напольный</option>
+                        </select>
+                    </div><br>
+                    <div align="center">
 
-        <p>Адрес электронной почты:<br>
-            <input type="email" placeholder="example@company.ru" size="50"> </p>
-    </div>
-    <div align="center">
-        <h2>Параметры помещения</h2>
-        <label for="box">Выберите тип помещения</label>
-        <select name="box" id="box">
-            <option value="1" selected>Офисное</option>
-            <option value="2">Торговое</option>
-            <option value="3">Производственное</option>
-            <option value="4">Жилое</option>
-            <option value="5">Спортивное</option>
-            <option value="6">Складское</option>
-        </select>
-    </div>
-    <div align="center">
-        <p>Размеры помещения (длина х ширина х высота), м<br>
-            <input type="text" placeholder="100х75х8" size="50"> </p>
-        <p>Цвет стен:
-        <input type="color"></p>
-        <p>Цвет пола:
-        <input type="color"></p>
-        <p>Высота рабочей поверхности<br>
-            <input type="text" placeholder="0,8 м" size="50"> </p>
-        <p>Дополнительные параметры помещения<br>
-            <textarea name="comment" cols="60" rows="4"></textarea><br>
-        <h2>Параметры системы освещения</h2>
-        <p>Необходимый уровень освещенности<br>
-            <input type="text" size="50"> </p>
-        <p>Высота подвеса светильников, м.
-            <input type="number"> </p>
-        <label for="kak">Способ крепления светильников</label>
-        <select name="kak" id="kak">
-            <option value="0" disabled selected>Не выбрано</option>
-            <option value="1" >Встраиваемый</option>
-            <option value="2">Накладной</option>
-            <option value="3">Подвесной</option>
-            <option value="4">Консольный</option>
-            <option value="5">Настенный</option>
-            <option value="6">Трековый</option>
-            <option value="6">Напольный</option>
-        </select>
-    </div><br>
-    <div align="center">
+                       <fieldset> <legend><b>Цель проекта:</b></legend>
+                        <label>
+                            <input type="checkbox" name="sections[]"> Замена существующих светильников на другие
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="sections[]"> Сокращение энергопотребления осветительной установки
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="sections[]">Увеличение освещенности
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="sections[]">Установка светильников на проектируемых или строящихся объектах
+                        </label><br></fieldset>
+                    </div>
+                    <div align="center">
+                        <p>Загрузите план помещения, фотографии объекта (.dwg, .pdf, .jpeg и др.)<br>
+                            <input type="file" multiple>
+                        </p>
 
-       <fieldset> <legend><b>Цель проекта:</b></legend>
-        <label>
-            <input type="checkbox" name="sections[]"> Замена существующих светильников на другие
-        </label><br>
-        <label>
-            <input type="checkbox" name="sections[]"> Сокращение энергопотребления осветительной установки
-        </label><br>
-        <label>
-            <input type="checkbox" name="sections[]">Увеличение освещенности
-        </label><br>
-        <label>
-            <input type="checkbox" name="sections[]">Установка светильников на проектируемых или строящихся объектах
-        </label><br></fieldset>
-    </div>
-    <div align="center">
-        <p>Загрузите план помещения, фотографии объекта (.dwg, .pdf, .jpeg и др.)<br>
-            <input type="file" multiple>
-        </p>
+                    </div>
+                    <div align="center">
+                        <p>Дополнительные комментарии<br>
+                            <textarea name="comment" cols="70" rows="5"></textarea></p>
+                        <p>Дата заполнения заявки:
+                        <input type="date"></p><br>
+                        <input type="submit" value="Отправить">
+                    </div>
+                </form>
+            </div>
 
-    </div>
-    <div align="center">
-        <p>Дополнительные комментарии<br>
-            <textarea name="comment" cols="70" rows="5"></textarea></p>
-        <p>Дата заполнения заявки:
-        <input type="date"></p><br>
-        <input type="submit" value="Отправить">
-    </div>
-</div>
-</form>
 </body>
 </html>
