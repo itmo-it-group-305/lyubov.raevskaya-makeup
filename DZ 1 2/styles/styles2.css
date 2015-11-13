@@ -104,14 +104,24 @@ header {
 }
 
 .text table tr th img{
-    width: 210px;
-    height: 150px;
+    width: 290px;
+    height: 230px;
 }
 .text table tr th {
     width: 140px;
     height: auto;
     text-align: center;
     padding: 5px;
+}
+table.bottom {
+    background: #bbb;
+    height: 40px;
+    text-align: center;
+    box-shadow: 7px 7px 10px rgba(0,0,0,0.2);
+}
+table.bottom a {
+    text-decoration: none;
+    padding: 0;
 }
 .menu {
     list-style: none;
@@ -147,20 +157,24 @@ float: left;
     background: #aaa;
     color: black;
 }
-.submenu {
+ul.submenu {
     display: none;
-
-  top: 100px;
+    position: absolute;
+    left: -40px;
 }
 .submenu li{
     display: block;
-    position: absolute;
+
+    width: 235px;
+
 }
 
 .submenu li a{
     display: block;
+
 }
-.menu li:hover ul{
+.menu li:hover ul.submenu{
     display: block;
+
 }
 
