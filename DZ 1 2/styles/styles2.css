@@ -1,0 +1,166 @@
+@import "Grid.css";
+@import "normalize.css";
+
+body{
+    background: url(../Images/irongrip.png);
+    color: #bbb;
+    font-family: "Calibri Light", Arial, sans-serif;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 120px;
+}
+.name {
+     display: block;
+     font-size: 2em;
+     font-style: italic;
+     font-weight: bold;
+     text-align: left;
+     padding-top: 0;
+     margin: 20px;
+
+    text-shadow: 2px 2px 5px black;
+ }
+.name a {
+    text-decoration: none;
+    color: #bbb;
+}
+.search {
+     display: block;
+
+   }
+
+.search input {
+   height: 25px;
+     width: 100%;
+    margin-top: 20px;
+ }
+.search p {
+    float: right;
+    height: 0.7em;
+    text-align: right;
+}
+
+.banner {
+    display: block;
+
+}
+.banner img{
+    width: 940px;
+    height: 250px;
+    margin-top: 0;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul li {
+    text-decoration: none;
+    display: block;
+    color: #eee;
+    background: #bbb;
+
+    height: 40px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #000;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    margin-bottom: 2px;
+    line-height: 40px;
+}
+
+.sidebar ul li:hover {
+    background: #aaa;
+}
+
+
+/* .menu tr th a {
+    text-decoration: none;
+}
+
+.menu tr th {
+    color: #eee;
+    background: #bbb;
+    height: 40px;
+    width: 235px;
+    text-align: center;
+    margin: auto 1px;
+    border-left: 2px solid #000000;
+}
+.menu tr th:hover {
+    background: #aaa;
+}*/
+
+.text {
+    padding: 20px;
+}
+
+.text table tr th img{
+    width: 210px;
+    height: 150px;
+}
+.text table tr th {
+    width: 140px;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+}
+.menu {
+    list-style: none;
+    display: table;
+    background: #bbb;
+    height: 40px;
+    text-align: center;
+    padding-left: 0;
+    font-weight: bold;
+    box-shadow: 7px 7px 10px rgba(0,0,0,0.2);
+
+}
+.menu li {
+float: left;
+    display: table-cell;
+    width: 25%;
+    height: 40px;
+
+    background: #5a5a5a;
+    position: relative;
+}
+.menu li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding-top: 10px;
+    height: 40px;
+    text-align: center;
+
+
+}
+.menu li a:hover {
+    background: #aaa;
+    color: black;
+}
+.submenu {
+    display: none;
+
+  top: 100px;
+}
+.submenu li{
+    display: block;
+    position: absolute;
+}
+
+.submenu li a{
+    display: block;
+}
+.menu li:hover ul{
+    display: block;
+}
+
